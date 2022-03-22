@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;600&display=swap');
+:root {
+    --primary-color: #350069;
+    --secondary-color: #E8C466;
+}
+
+body {
+    background: var(--primary-color);
+    margin: 0;
+    font-family: 'Epilogue' , sans-serif;
+}
+
+.container {
+    background-color: var(--primary-color)
+}
+
+.navbar {
+    padding: 1em;
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.mobile-menu-open {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: none;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 1.5em;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+.hero-left {
+    color: white;
+    text-align: center;
+}
+
+p.hero {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-cta {
+    padding: 2em;
+}
+a.primary-cta {
+    background: white;
+    color: var(--primary-color);
+    padding: 1em 2em;
+    font-weight: bold;
+    border-radius: 5em;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.hero-cta {
+    display: inline;
+    
+}
+a.secondary-cta {
+    background: #704A94;
+    padding: .8em 1.3em;
+    font-weight: bold;
+    border-radius: 5em;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.video-icon {
+    margin-left: .5em;
+    vertical-align: middle;
+}
+
+
+.hero-img {
+    margin-top: 4em;
+    margin-bottom: 2em; 
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+
+section.other {
+    background-color: #ffffff;
+    padding: 2em;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p.other {
+    margin-top: -1em;
+}
+.stores {
+    display: flex;
+    margin-bottom: 2.5em;
+}
+
+.stores-text {
+    margin-left: 2em;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-row-1 {
+    margin-right: auto;
+}
+
+.logo-row-2 {
+    margin-left: 3em;
+}
