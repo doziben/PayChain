@@ -19,16 +19,13 @@ body {
 }
 
 nav {
-    display: none;
+     display: none;
+     cursor: default;
 }
 
 .container {
     display: flex;
     place-content: space-between;
-}
-
-.mobile-menu-open {
-    cursor: pointer;
 }
 
 ul {
@@ -76,6 +73,14 @@ a.primary-cta {
     margin-right: 1em;
 }
 
+a.primary-cta:hover {
+    background: none;
+    color: white;
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 0.8em 1.8em;
+}
+
 .hero-cta {
     display: inline;
     
@@ -87,6 +92,11 @@ a.secondary-cta {
     border-radius: 5em;
     display: inline-block;
     vertical-align: bottom;
+}
+
+a.secondary-cta:hover {
+    background:var(--secondary-color);
+    color: white;
 }
 
 .video-icon {
@@ -137,5 +147,249 @@ p.other {
 }
 
 .logo-row-2 {
-    margin-left: 3em;
+    margin-left: 0;
+}
+
+.mobile-menu-open {
+    display:block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    padding: 1em;
+    height: 100vh;
+}
+
+.mobile-menu-close {
+    float: right;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+a.link {
+    color: black;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3rem;
+}
+
+a:hover { color: var(--primary-color);
+        font-weight: bold;
+
+}
+
+a.link-cta {
+    color: black;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3rem;
+}
+
+
+ul {
+    margin-top: 3em;
+    margin-left: -2em;
+}
+
+ul.secondary-nav {
+    margin-top: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+
+.logo {
+    width: 60%;
+    margin-top: 0.5em;
+}
+.mobile-menu-open, .mobile-menu-close {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 180px auto ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    padding: 0;
+    position: unset;
+    height: auto;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    height: 2rem;
+    
+}
+a.link {
+
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+
+ul.secondary-nav {
+    margin-left: -2em;
+    vertical-align: bottom;
+    margin-right: 4em;
+}
+a.link-cta {
+
+    font-size: 0.9rem;
+    color: #ffffff;
+    background: #704A94;
+    padding: .8em 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 0.1em;
+}
+
+a.link-cta:hover {
+    font-weight: normal;
+    background: #E8C466;
+}
+
+ul.primary-nav {
+    margin: 0;
+}
+
+ul.secondary-nav {
+    margin: 0;
+}
+
+p.hero {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.hero-img {
+    width: 80%;
+}
+
+.other-container {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.logos {
+    width: auto;
+    margin-top: 1em;
+}
+
+.logo-row-1 {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    margin-right: 0;
+    row-gap: 0.5em;
+}
+
+.logo-row-2 {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    row-gap: 0.5em;
+
+}
+img.sponsors {
+    max-width: 6em;
+}
+
+}
+
+
+@media only screen and (min-width: 1080px) {
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.other-container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+section.hero {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    margin: 2em auto;
+}
+
+.hero-left {
+    text-align: left;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: auto;
+    margin-top: 1.5em;
+}
+
+p.hero {
+    width: 20em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2em;
+}
+.hero-cta {
+    padding: 0;
+}
+
+a.link {
+    margin-right: 1em;
+}
+.hero-img {
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.logos {
+    display: block;
+}
+
+.logo-row-1 {
+    flex-direction: row;
+}
+
+.logo-row-2 {
+    flex-direction: row;
+    margin-left: 0;
+}
+img.sponsors {
+    padding: 1em;
+    max-width: 10em;
+}
+
+img.maps {
+    width: 2em;
+}
 }
